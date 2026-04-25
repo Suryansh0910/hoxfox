@@ -196,4 +196,13 @@
   .section-label {
     @apply font-display text-[11px] font-semibold tracking-[0.12em] uppercase text-text3 mb-3;
   }
+
+  /* ── Pipeline Animation ── */
+  @keyframes pipelineSlide {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+  }
+  .pipeline-scroll {
+    animation: pipelineSlide 15s linear infinite;
+  }
 }
